@@ -1,0 +1,173 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* main container */
+.container { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #a7a7a7;
+    border: 3px double black;
+}
+
+/* left and right .container box */
+.left-container, .right-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.left-container {
+    border: 3px solid #000;
+    padding: 10px;
+}
+
+.right-container {
+    height: 430px;
+    font-size: 20px;
+    border: 3px solid #000;
+    padding: 10px;
+}
+
+/* undo aur redo portion */
+.undo-redo {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+ 
+  
+  .undo-redo button {
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    text-align: center; 
+    display: inline-block; 
+    transition: 0.3s ease-in-out; 
+    background-color: #e7e7e7; 
+    color: #333; 
+    font-weight: bold; 
+  }
+  
+  .undo-redo button:hover {
+    background-color: #645c5c; 
+    color: #000; 
+  }
+  
+  .undo-redo button:active {
+    background-color: #b3b3b3; 
+    transform: translateY(2px); 
+  }
+  
+/* middle wala container */
+.center-container {
+    border: 2px solid #000;
+    padding: 10px;
+}
+
+.center-container {
+    text-align: center; 
+  }
+  .center-container h1 {
+    margin: 0; 
+  }
+
+.card {
+    width: 600px;
+    height: 850px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card-inner {
+    position: relative;
+}
+
+#card-text {
+    width: 97%;
+    height: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    font-size: 20px;
+    background-color: #fff8f8;
+}
+
+/* right container ka portion */
+.text-options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.font-selection, .color-picker, .font-size, .add-text-button {
+    display: flex;
+    align-items: center;
+}
+
+label {
+    margin-right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+select, input[type="color"], button {
+    padding: 2.5px;
+    border: 2px solid #ccc;
+    border-radius: 22px;
+}
+
+input[type="color"] {
+    appearance: none;
+    width: 50px; 
+    height: 30px;
+    border-radius: 30px;
+    background-color: #fff;
+  }
+
+.add-text-button {
+    align-items: center;
+    justify-content: center;
+}
+
+.add-text-button button {
+    margin-top: 250px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 30px; 
+    border: none;
+    border-radius: 20px; 
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    transition: 0.3s ease-in-out;
+    
+  }
+  
+  .add-text-button button:hover {
+    background-color: #2d662f; 
+  }
+  
+  .add-text-button button:active {
+    transform: translateY(2px); 
+  }
+
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+}
+
+
+
+

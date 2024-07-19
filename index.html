@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-container">
+            <div class="undo-redo">
+                <button id="undo">Undo</button>
+                <button id="redo">Redo</button>
+            </div>
+        </div>
+        <div class="center-container">
+            <h1>Editor</h1>
+            <div class="card">
+                <div class="card-inner">
+                    <textarea id="card-text" placeholder="Enter New text here"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="text-options">
+                <div class="font-selection">
+                    <label for="font-family">Font:</label>
+                    <select id="font-family">
+                        <option value="Arial">Arial</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                        <option value="Verdana">Verdana</option>
+                        <option value="Courier New">Courier New</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Trebuchet MS">Trebuchet MS</option>
+                        <option value="Comic Sans MS">Comic Sans MS</option>
+                    </select>
+                </div>
+                <div class="font-size">
+                    <label for="font-size">Size:</label>
+                    <select id="font-size">
+                        <option value="16">16px</option>
+                        <option value="18">18px</option>
+                        <option value="20">20px</option>
+                        <option value="22">22px</option>
+                        <option value="24">24px</option>
+                        <option value="26">26px</option>
+                        <option value="28">28px</option>
+                        <option value="30">30px</option>
+                        <option value="32">32px</option>
+                        <option value="34">34px</option>
+                    </select>
+                </div>
+                <div class="color-picker">
+                    <label for="text-color">Color:</label>
+                    <input type="color" id="text-color">
+                </div>
+                <div class="add-text-button">
+                    <button id="add-text-button">Add Text</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
